@@ -1,0 +1,17 @@
+# include:
+#   - remote: 'https://gitlab.k8s.cloud.statcan.ca/terraform-modules-sql-server/azure-ci-pipeline-sql/raw/master/.gitlab-ci.yml'
+
+# stages:
+#   - plan
+#   - apply
+#   - configure
+
+include:
+  - remote: 'https://gitlab.k8s.cloud.statcan.ca/cloudops/azure-ci-pipeline/raw/master/ci2/.gitlab-ci.yml'
+
+stages:
+  - plan
+  - apply
+  - configure
+
+
